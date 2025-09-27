@@ -1,35 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formulario para Registrar a tu Mascota</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="form-container">
-    <h2>Formulario para Registrar a tu Mascota</h2>
-    <form action="#" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies La Molina</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-icon" class="menu-icon">☰</div>
+      <h1>Inmobiliarias - Tribago</h1>
+      <nav id="menu" class="hidden">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="contacto.html">Contact</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="game.html">Game</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <button id="btn_click">Click me</button>
+      <div class="movie-grid"></div>
+    </main>
+    <!-- Modal para detalle de películas -->
+    <div id="movieModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img id="modalImage" src="" alt="Imagen de la propiedad" />
+          </div>
+          <div class="modal-details">
+            <h2 id="modalTitle"></h2>
+            <div class="modal-info">
+              <p><strong>Ciudad:</strong> <span id="modalCiudad"></span></p>
+              <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+              <p><strong>Categoria:</strong> <span id="categoria"></span></p>
+              <p>
+                <strong>Precio Actual:</strong>
+                <span id="precio_actual"> ⭐ </span>
+              </p>
+              <p>
+                <strong>Precio Anterior:</strong>
+                <span id="precio_anterior"></span>
+              </p>
+            </div>
+            <div class="modal-cast">
+              <strong>Área:</strong>
+              <div id="area"></div>
+            </div>
+            <div class="modal-cast">
+              <strong>Habitaciones:</strong>
+              <div id="habitaciones"></div>
+            </div>
+            <div class="modal-cast">
+              <strong>Baños:</strong>
+              <div id="baños"></div>
+            </div>
+            <div class="modal-cast">
+              <strong>Parqueadores:</strong>
+              <div id="parqueadores"></div>
+            </div>
+            <div class="modal-synopsis">
+              <strong>Sinopsis:</strong>
+              <p id="modalSynopsis"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <label for="raza">Raza:</label>
-      <input type="text" id="raza" name="raza" required>
-
-      <label for="color">Color:</label>
-      <input type="text" id="color" name="color" placeholder="Ej. blanco, marrón, negro" required>
-
-      <label for="edad">Edad:</label>
-      <input type="number" id="edad" name="edad" placeholder="En años" required>
-
-      <label for="tamaño">Tamaño:</label>
-      <input type="text" id="tamaño" name="tamaño" placeholder="Ej. pequeño, mediano, grande" required>
-
-      <label for="peso">Peso:</label>
-      <input type="number" id="peso" name="peso" placeholder="En kg" step="0.1" required>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-</body>
+    <script src="movies.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

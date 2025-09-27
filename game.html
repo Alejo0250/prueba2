@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies La Molina</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <header>
+      <div id="menu-icon" class="menu-icon">☰</div>
+      <h1>Movies La Molina</h1>
+      <nav id="menu" class="hidden">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="contacto.html">Contact</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="game.html">Game</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="game-area">
+        <h1>Anime Game</h1>
+        <p>Haz clic en el boton para comenzar!</p>
+        <input
+          id="score-box"
+          type="text"
+          value="0"
+          readonly
+          style="width: 60px; margin-bottom: 10px; text-align: center"
+        />
+        <div class="game-container">
+          <div class="game-player"></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
